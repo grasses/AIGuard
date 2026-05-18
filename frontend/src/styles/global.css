@@ -1,0 +1,74 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+.page-header {
+  margin-bottom: 24px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 16px;
+}
+
+.stat-card {
+  text-align: center;
+}
+
+.stat-card .ant-statistic-title {
+  font-size: 14px;
+  color: #666;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.auth-card {
+  width: 400px;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.auth-card h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #1677ff;
+}
+
+.color-tag-llm { background: #e6f4ff; color: #1677ff; }
+.color-tag-mcp { background: #f6ffed; color: #52c41a; }
+.color-tag-memory { background: #fff7e6; color: #fa8c16; }
+.color-tag-pre { background: #e6fffb; color: #13c2c2; }
+.color-tag-post { background: #f9f0ff; color: #722ed1; }
+.color-tag-alert { background: #fffbe6; color: #faad14; }
+.color-tag-block { background: #fff2f0; color: #ff4d4f; }
+.color-tag-correct { background: #e6f4ff; color: #1677ff; }
+
+@media (max-width: 768px) {
+  .auth-card {
+    width: 90%;
+  }
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
